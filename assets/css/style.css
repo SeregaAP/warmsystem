@@ -796,6 +796,10 @@ a, p {
       -ms-flex-align: center;
           align-items: center;
 }
+.hero .hero_cnt .hero_cnt-info .hero_cnt-text .hero_slider-btn-group .btn-hero-sl {
+  width: 35px;
+  height: 35px;
+}
 .hero .hero_cnt .hero_cnt-info .hero_cnt_list {
   width: 50%;
 }/*# sourceMappingURL=style.css.map */

@@ -439,6 +439,10 @@ a,p{
                 .hero_slider-btn-group{
                     display: flex;
                     align-items: center;
+                    .btn-hero-sl{
+                        width: 35px;
+                        height: 35px;
+                    }
                 }
             }
             .hero_cnt_list{
