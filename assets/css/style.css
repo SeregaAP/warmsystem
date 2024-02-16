@@ -788,6 +788,11 @@ a, p {
 .hero .hero_cnt .hero_cnt-info .hero_cnt-text .hero_btn-group .btn-dark {
   margin-right: 15px;
 }
+.hero .hero_cnt .hero_cnt-info .hero_cnt-text .hero_slider-btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .hero .hero_cnt .hero_cnt-info .hero_cnt_list {
   width: 50%;
 }/*# sourceMappingURL=style.css.map */
