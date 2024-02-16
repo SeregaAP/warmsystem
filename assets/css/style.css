@@ -799,6 +799,7 @@ a, p {
 .hero .hero_cnt .hero_cnt-info .hero_cnt-text .hero_slider-btn-group .btn-hero-sl {
   width: 35px;
   height: 35px;
+  border-radius: 50%;
 }
 .hero .hero_cnt .hero_cnt-info .hero_cnt_list {
   width: 50%;
