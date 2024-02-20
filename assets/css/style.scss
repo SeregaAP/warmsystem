@@ -850,6 +850,103 @@ p{
     }
 }
 
+.economy{
+    padding: 65px 0;
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 45px;
+        h2{
+            max-width: 367px;
+        }
+        span{
+            color: $red;
+        }
+    }
+    &__subtitle{
+        max-width: 297px;
+    }
+    &__partners {
+        display: grid;
+        grid-template-columns: 19% 19% 19% 19% 19%;
+        column-gap: 1.25%;
+        row-gap: 15px;
+        margin-bottom: 40px;
+        .partners-itm{
+            width: 100%;
+        }
+    }
+    .economy__list{
+        display: grid;
+        grid-template-columns: 24% 24% 24% 24%;
+        column-gap: 1.33%;
+        .economy__item{
+            position: relative;
+            width: 100%;  
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            .center{
+                background: rgba(255, 0, 0, 0.558);
+                position: absolute;
+                width: 100%;
+                height: 250px;
+                backface-visibility: hidden;
+                transition: transform .6s linear;
+                padding: 20px;
+                border-radius: 4px;
+                h4{
+                    font-weight: 400;
+                    font-size: 1.1rem;
+                    line-height: 1.4rem;
+                    font-family: 'SFProDisplay';
+                    text-transform: uppercase;
+                    color: #232323;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 1.25rem;
+                    font-family: 'SFProDisplay';
+                    color: #fff;
+                }
+            }
+            .item_front{
+                transform: perspective(600px) rotateY(0deg);
+                background: #F4F4F4;
+            }
+            .item_back{
+                transform: perspective(600px) rotateY(180deg);
+                background:#737373;
+            }
+            &:hover{
+                .item_front{
+                    transform: perspective(600px) rotateY(-180deg);
+                }
+                .item_back{
+                    transform: perspective(600px) rotateY(0deg);
+                }
+            }
+            .economy__item_link{
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                width: 37px;
+                height: 37px;
+                background: #fff;
+                border-radius: 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $red;
+            }
+        }
+    }
+}
+
 
 
 
