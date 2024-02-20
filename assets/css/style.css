@@ -1394,6 +1394,156 @@ p {
   color: #F03222;
 }
 
+.about-us {
+  background: #F4F4F4;
+  padding: 80px 0;
+}
+.about-us .about-us__cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about-us .about-us__cnt .about-us__info {
+  width: 33%;
+  margin-right: 5%;
+}
+.about-us .about-us__cnt .about-us__info h2 {
+  margin-bottom: 40px;
+}
+.about-us .about-us__cnt .about-us__info p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-family: "SFProDisplay";
+  color: #232323;
+  margin-bottom: 20px;
+}
+.about-us .about-us__cnt .about-us__info .about-us_p {
+  margin-bottom: 35px;
+}
+.about-us .about-us__cnt .about-us__image {
+  width: 62%;
+}
+.about-us .about-us__cnt .about-us__image img {
+  width: 100%;
+}
+
+.installation {
+  padding: 70px 0;
+}
+.installation__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 55px;
+}
+.installation__title h2 {
+  max-width: 1013px;
+}
+.installation__title span {
+  color: #F03222;
+}
+.installation__cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.installation__column {
+  width: 53%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.installation__column img {
+  width: 100%;
+}
+.installation__column .installation__column_itm {
+  width: 50%;
+  height: 50%;
+  padding: 25px 30px;
+}
+.installation__column .installation__column_itm h4 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-family: "SFProDisplay";
+  color: #232323;
+  margin-bottom: 10px;
+}
+.installation__column .installation__column_itm:last-child {
+  background: #F03222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.installation__column .installation__column_itm:last-child h4 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-family: "SFProDisplay";
+  margin-bottom: 0;
+}
+.installation__column .installation__column_itm:last-child span {
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  text-transform: uppercase;
+  font-family: "SFProDisplay";
+}
+.installation__column .installation__column_itm:last-child a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  font-family: "SFProDisplay";
+}
+.installation .inst-col-2 {
+  width: 47%;
+}
+.installation .inst-col-1 {
+  position: relative;
+}
+.installation .inst-col-1 .item_install-abs {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  background: #fff;
+  padding: 25px 30px;
+  border: 2px solid #F03222;
+}
+.installation .inst-col-1 .item_install-abs h4 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-family: "SFProDisplay";
+  color: #232323;
+  margin-bottom: 10px;
+}
+.installation .inst-col-1 .item_install-abs img {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 37px;
+}
+
 @media screen and (max-width: 1200px) {
   .hero .hero_cnt {
     top: 54%;
