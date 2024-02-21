@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/libs/awesome/css/all.css">
     <link rel="stylesheet" href="./assets/libs/fotorama-4.6.4/fotorama.css">
+    <link rel="stylesheet" href="./assets/libs/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <meta name="description" content="">
@@ -131,9 +132,9 @@
                                 </ul>
                             </div>
                             <div class="header_social">
-                                <a title="наш youtube" target="_blank" href="http://"><i class="fa-brands fa-youtube"></i></a>
-                                <a title="наш youtube" target="_blank" href="http://"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a title="наш youtube" target="_blank" href="http://"><i class="fa-brands fa-instagram"></i></a>
+                                <a title="наш youtube" target="_blank" href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <a title="наш youtube" target="_blank" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a title="наш youtube" target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -155,7 +156,7 @@
                                     <h1>Доверьте монтаж инженерных систем профессионалам</h1>
                                     <p>Лучшая команда инженеров в Казахстане</p>
                                     <div class="hero_btn-group">
-                                        <button type="button" class="btn-dark">Оставить заявку</button>
+                                        <button type="button" class="btn-dark"><span></span>Оставить заявку</button>
                                         <a href="#" class="btn-light">Смотреть проекты</a>
                                     </div>
                                     <div class="hero_slider-btn-group">
@@ -232,8 +233,8 @@
                                             <span class="price">390 090₸</span>
                                             <span class="old_price">600 990₸</span>
                                             <div class="quality__itm-group">
-                                                <a class="btn-light-sm" href="http://">В корзину</a>
-                                                <a class="itm-link" href="http://">Подробнее</a>
+                                                <a class="btn-light-sm" href="#">В корзину</a>
+                                                <a class="itm-link" href="#">Подробнее</a>
                                             </div>
                                         </div>
                                     </form>
@@ -266,8 +267,8 @@
                                             <span class="price">390 090₸</span>
                                             <span class="old_price">600 990₸</span>
                                             <div class="quality__itm-group">
-                                                <a class="btn-light-sm" href="http://">В корзину</a>
-                                                <a class="itm-link" href="http://">Подробнее</a>
+                                                <a class="btn-light-sm" href="#">В корзину</a>
+                                                <a class="itm-link" href="#">Подробнее</a>
                                             </div>
                                         </div>
                                     </form>
@@ -300,8 +301,8 @@
                                             <span class="price">390 090₸</span>
                                             <span class="old_price">600 990₸</span>
                                             <div class="quality__itm-group">
-                                                <a class="btn-light-sm" href="http://">В корзину</a>
-                                                <a class="itm-link" href="http://">Подробнее</a>
+                                                <a class="btn-light-sm" href="#">В корзину</a>
+                                                <a class="itm-link" href="#">Подробнее</a>
                                             </div>
                                         </div>
                                     </form>
@@ -334,15 +335,15 @@
                                             <span class="price">390 090₸</span>
                                             <span class="old_price">600 990₸</span>
                                             <div class="quality__itm-group">
-                                                <a class="btn-light-sm" href="http://">В корзину</a>
-                                                <a class="itm-link" href="http://">Подробнее</a>
+                                                <a class="btn-light-sm" href="#">В корзину</a>
+                                                <a class="itm-link" href="#">Подробнее</a>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                             <div class="quality__btngroup">
-                                <a class="btn-dark" href="">Перейти в каталог</a>
+                                <a class="btn-dark" href="#"><span></span>Перейти в каталог</a>
                                 <button class="btn-light" type="button">Получить консультацию</button>
                             </div>
                         </div>
@@ -580,7 +581,7 @@
                                     <p class="about-us_p">
                                         <b>Наша миссия:</b> Обеспечить объекты наших клиентов надежным инженерным оборудованием для долгой, комфортной и безопасной жизни.
                                     </p>
-                                    <a class="btn-light" href="http://">Смотреть подробнее</a>
+                                    <a class="btn-light" href="#">Смотреть подробнее</a>
                                 </div>
                                 <div class="about-us__image">
                                     <img loading="lazy" src="./assets/images/about-us-img.jpg" alt="наша компания">
@@ -612,6 +613,12 @@
                                     <img loading="lazy" src="./assets/images/installation-img.jpg" alt="монтажник">
                                 </div>
                                 <div class="installation__column inst-col-2">
+                                    <div class="installation__column_itm">
+                                        <h4>СОБСТВЕННЫЙ АВТОПАРК</h4>
+                                        <p>
+                                            Всегда своевременная доставка материалов и выезд бригады на объект
+                                        </p>
+                                    </div>
                                     <div class="installation__column_itm">
                                         <h4>ПРОФЕССИОНАЛЬНЫЕ МОНТАЖНИКИ</h4>
                                         <p>
@@ -651,13 +658,416 @@
             </section>
 
             <section class="work-system">
-                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="work-system__title">
+                                <h2 class="title">
+                                    ОБЕСПЕЧИМ <span>100% РАБОЧУЮ</span> СИСТЕМУ
+
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="work-system__list-adv">
+                                <div class="list-adv-itm">
+                                    <span class="ico-check">
+                                        <i class="fa-sharp fa-solid fa-check"></i>
+                                    </span>
+                                    <h5 class="adv-itm-title">ОТСУТСТВИЕ ТЕПЛОПОТЕРЬ</h5>
+                                    <p>
+                                        Магистрали трубопроводов монтируем в утеплителе, 
+                                        чтобы не было теплопотерь и повысилась 
+                                        энергоэффективность
+                                    </p>
+                                </div>
+                                <div class="list-adv-itm">
+                                    <span class="ico-check">
+                                        <i class="fa-sharp fa-solid fa-check"></i>
+                                    </span>
+                                    <h5 class="adv-itm-title">ПРАКТИЧНОСТЬ</h5>
+                                    <p>
+                                        Радиаторы подключаем из стены, это 
+                                        дает возможность укладывать напольное покрытие 
+                                        без порезов и сделать пол ровным
+                                    </p>
+                                </div>
+                                <div class="list-adv-itm">
+                                    <span class="ico-check">
+                                        <i class="fa-sharp fa-solid fa-check"></i>
+                                    </span>
+                                    <h5 class="adv-itm-title">УДОБСТВО</h5>
+                                    <p>
+                                        Подключаем насос рециркуляции горячей воды. 
+                                        Устанавливаем термоголовки на каждый радиатор 
+                                        для зональной регулировки температуры
+                                    </p>
+                                </div>
+                                <div class="list-adv-itm">
+                                    <span class="ico-check">
+                                        <i class="fa-sharp fa-solid fa-check"></i>
+                                    </span>
+                                    <h5 class="adv-itm-title">КАЧЕСТВЕННЫЙ МОНТАЖ</h5>
+                                    <p>
+                                        обеспечит долгий срок службы и отсутсвие 
+                                        расходов на обслуживание
+                                    </p>
+                                </div>
+                                <div class="list-adv-itm">
+                                    <span class="ico-check">
+                                        <i class="fa-sharp fa-solid fa-check"></i>
+                                    </span>
+                                    <h5 class="adv-itm-title">СОПУТСТВУЮЩИЕ РАБОТЫ</h5>
+                                    <p>
+                                        Все сопутствующие работы берём на себя. 
+                                        Выполним аккуратный монтаж, автоматизируем 
+                                        вашу систему
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="garant">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="garant__cnt">
+                                    <div class="garant__column garant__column-one">
+                                        <h2 class="title">
+                                            ГАРАНТИРУЕМ <span>ЛУЧШИЕ УСЛОВИЯ.</span>
+                                            ПРОПИШЕМ ИХ В ДОГОВОРЕ
+                                        </h2>
+                                        <p>
+                                            Получите подробную консультацию по системе 
+                                            отопления, мы расскажем, как можно дополнительно 
+                                            сэкономить до 25% на материалах.<br>
+                                            <span>
+                                                Можем начать с переписки в WhatsApp, это удобно и быстро.
+                                            </span>
+                                        </p>
+                                        <a href="#" class="btn-dark"><span></span>НАПИСАТЬ В WHATSAPP</a>
+                                    </div>
+                                    <div class="garant__column garant__column-two">
+                                        <span class="col-del-decore"></span>
+                                        <ul>
+                                            <li>
+                                                <h4>ГАРАНТИЯ КАЧЕСТВА</h4>
+                                                <p>
+                                                    Гарантия на монтажные
+                                                    работы 3 года
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h4>ГАРАНТИЯ ЦЕНЫ</h4>
+                                                <p>
+                                                    Цена, указанная в договоре не увеличится. 
+                                                    Выполняем свои обязательства без дополнительных оплат
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h4>ГАРАНТИЯ СОБЛЮДЕНИЯ СРОКОВ</h4>
+                                                <p>
+                                                    Сроки выполнения работ прописываются в договоре. 
+                                                    Не уложились в срок - можете не платить
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h4>ГАРАНТИЯ НАДЕЖНОСТИ</h4>
+                                                <p>
+                                                    Инженерно продуманные системы прослужат 
+                                                    намного дольше срока гарантии
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img loading="lazy" src="./assets/images/decore-arrow.png" alt="стрелка" class="decore-arrow">
             </section>
+
+            <section class="report">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="report__cnt">
+                                <div class="report__info">
+                                    <h2 class="title">
+                                        ПРЕДОСТАВИМ <span>ПОЛНУЮ ОТЧЕТНОСТЬ</span> О ХОДЕ РАБОТ ЧЕРЕЗ ГРУППУ В УДОБНОМ ВАМ МЕССЕНДЖЕРЕ
+                                    </h2>
+                                    <ul class="info_list">
+                                        <li class="info_list-itm">
+                                            <span class="report-ico">
+                                                <i class="fa-sharp fa-solid fa-check"></i>
+                                            </span>
+                                            <h5>Создаем специальную группу</h5>
+                                            <p>
+                                                в WhatsApp, Telegram, 
+                                                в которой будет вся хронология работ: 
+                                                сообщения, фото, документы
+                                            </p>
+                                        </li>
+                                        <li class="info_list-itm">
+                                            <span class="report-ico">
+                                                <i class="fa-sharp fa-solid fa-check"></i>
+                                            </span>
+                                            <h5>Два раза в неделю</h5>
+                                            <p>
+                                                присылаем фото и видео отчет 
+                                                с комментариями
+                                            </p>
+                                        </li>
+                                        <li class="info_list-itm">
+                                            <span class="report-ico">
+                                                <i class="fa-sharp fa-solid fa-check"></i>
+                                            </span>
+                                            <h5>Прораб с опытом работы 12 лет,</h5>
+                                            <p>
+                                                находится на объекте ежедневно и 
+                                                контролирует все этапы лично
+                                            </p>
+                                        </li>
+                                        <li class="info_list-itm">
+                                            <span class="report-ico">
+                                                <i class="fa-sharp fa-solid fa-check"></i>
+                                            </span>
+                                            <h5>Мы не пропадаем</h5>
+                                            <p>
+                                                и доступны 24\7. Вы сможете звонить 
+                                                даже в выходные дни, если у вас возникнут вопросы
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="report__sl-block">
+                                    <div class="report__slider">
+                                        <img loading="lazy" src="./assets/images/phone-slider.png" alt="">
+                                        <img loading="lazy" src="./assets/images/phone-slider.png" alt="">
+                                        <img loading="lazy" src="./assets/images/phone-slider.png" alt="">
+                                    </div>
+                                    <div class="report-sl-control">
+                                        <button class="btn-report-sl report-sl-back" type="button">
+                                            <i class="fa-light fa-angle-left"></i>
+                                        </button>
+                                        <button class="btn-report-sl report-sl-next" type="button">
+                                            <i class="fa-light fa-angle-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sertificate">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="sertificate__title">
+                                <h2 class="title">
+                                    Документы и <span>сертификаты</span>
+                                </h2>
+                                <p class="sertificate__subtitle subtitle">
+                                    Наши специалисты постоянно повышают уровень 
+                                    своих знаний чтобы предоставлять для 
+                                    вас лучшее качество в работе
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="sertificate_lsider">
+                                <a class="fancybox" rel="chimps" href="./assets/images/sert1.jpg" tabindex="-1">
+                                    <img loading="lazy" src="./assets/images/sert1.jpg" alt="сертификат 1" class="sert-sl-itm">
+                                </a>
+                                <a class="fancybox" rel="chimps" href="./assets/images/sert2.jpg" tabindex="-1">
+                                    <img loading="lazy" src="./assets/images/sert2.jpg" alt="сертификат 2" class="sert-sl-itm">
+                                </a>
+                                <a class="fancybox" rel="chimps" href="./assets/images/sert3.jpg" tabindex="-1">
+                                    <img loading="lazy" src="./assets/images/sert3.jpg" alt="сертификат 3" class="sert-sl-itm">
+                                </a>
+                                <a class="fancybox" rel="chimps" href="./assets/images/sert4.jpg" tabindex="-1">
+                                    <img loading="lazy" src="./assets/images/sert4.jpg" alt="сертификат 4" class="sert-sl-itm">
+                                </a>
+                                <a class="fancybox" rel="chimps" href="./assets/images/sert2.jpg" tabindex="-1">
+                                    <img loading="lazy" src="./assets/images/sert2.jpg" alt="сертификат 2" class="sert-sl-itm">
+                                </a>
+                                <a class="fancybox" rel="chimps" href="./assets/images/sert3.jpg" tabindex="-1">
+                                    <img loading="lazy" src="./assets/images/sert3.jpg" alt="сертификат 3" class="sert-sl-itm">
+                                </a>
+                            </div>
+                            <div class="sertificate_control">
+                                <button class="btn-sert-sl sert-sl-back" type="button">
+                                    <i class="fa-light fa-angle-left"></i>
+                                </button>
+                                <button class="btn-sert-sl sert-sl-next" type="button">
+                                    <i class="fa-light fa-angle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="general-form">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="general-form_cnt" style="background: url(./assets/images/general-form-1.jpg);background-size: cover;background-repeat: no-repeat;">
+                                <div class="general-form_info">
+                                    <h3>Оставьте заявку на расчёт прямо сейчас и получите в подарок*</h3>
+                                    <ul>
+                                        <li>проект инженерных систем бесплатно</li>
+                                        <li>стабилизатор напряжения для защиты системы отопления</li>
+                                    </ul>
+                                    <p>*Подарок по акции предоставляется при подписании договора на монтаж</p>
+                                </div>
+                                <div class="general-form-control">
+                                    <div class="form-control">
+                                        <h5>ОСТАВЬТЕ ВАШ НОМЕР ТЕЛЕФОНА ДЛЯ БЕСПЛАТНОЙ КОНСУЛЬТАЦИИ</h5>
+                                        <form>
+                                            <label>Введите ваше имя</label>
+                                            <input name="name_zv" placeholder="Владислав" type="text" required>
+                                            <label>Введите номер</label>
+                                            <input name="phone_zv" placeholder="+7(___)___-__-__" type="text" required>
+                                            <button type="submit" class="btn-dark"><span></span>Перезвоните мне</button>
+                                            <div class="dealers_confiditial">
+                                                <input type="checkbox" name="pers-data_zr" checked="">
+                                                <label>Я согласен на обработку персональных данных</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="safety">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="safety__cnt">
+                                <div class="safety__info">
+                                    <h2 class="title">
+                                        ЗНАЕМ ВСЕ <span>ПОДВОДНЫЕ КАМНИ И ТРЕБОВАНИЯ БЕЗОПАСНОСТИ</span> 
+                                        ПРИ МОНТАЖЕ СИСТЕМ ОТОПЛЕНИЯ И ВОДОСНАБЖЕНИЯ
+                                    </h2>
+                                    <p>
+                                        Строго соблюдаем требования ГОСТ, СНИП
+                                        и международные стандарты
+                                    </p>
+                                </div>
+                                <div class="safety__list">
+                                    <div class="safety-line"></div>
+                                    <ul>
+                                        <li>
+                                            <span class="counter">
+                                                01
+                                            </span>
+                                            <p>
+                                                <b>Фиксируем стоимость</b> 
+                                                в договоре и не поднимаем 
+                                                ее в процессе работ
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span class="counter">
+                                                02
+                                            </span>
+                                            <p>
+                                                Делаем на совесть
+                                                и подстраиваемся под ваш бюджет
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span class="counter">
+                                                03
+                                            </span>
+                                            <p>
+                                                Вы <b>не переплачиваете,</b> поставки оборудования напрямую с 
+                                                заводов-производителей
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span class="counter">
+                                                04
+                                            </span>
+                                            <p>
+                                                <b>Подберем оптимальное решение</b> для 
+                                                уменьшения расходов на энергоносители
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span class="counter">
+                                                05
+                                            </span>
+                                            <p>
+                                                <b>Обеспечим сервисное обслуживание</b> 
+                                                в течение всего срока эксплуатации
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span class="counter">
+                                                06
+                                            </span>
+                                            <p>
+                                                <b>Подружим</b> между собой комплектующие различных брендов
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img loading="lazy" src="./assets/images/decore-arrow-grey.png" alt="стрелка" class="decore-arrow2">
+            </section>
+
+            <section class="project-gl">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="project-gl__title">
+                                <h2 class="title">
+                                    ЗА 5 ЛЕТ УСТАНОВИЛИ БОЛЕЕ <span>300
+                                        ИНЖЕНЕРНЫХ СИСТЕМ,</span> ВОТ НЕКОТОРЫЕ ИЗ НИХ
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="project-gl__list">
+                                <div class="project-gl-itm">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
     </div>
 
     <script src="./assets/libs/jquery/jquery-3.6.4.min.js"></script>
     <script src="./assets/libs//slick/slick.js"></script>
+    <script src="./assets/libs/fancybox/jquery.fancybox.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
