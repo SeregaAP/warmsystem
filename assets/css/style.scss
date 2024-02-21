@@ -1056,24 +1056,16 @@ p{
             bottom: 0;
             right: 0;
             width: 50%;
-            height: 50%;
-            background: #fff;
-            padding: 25px 30px;
-            border: 2px solid $red;
-            h4{
-                font-weight: 500;
-                font-size: 1.2rem;
-                line-height: 1.6rem;
-                font-family: 'SFProDisplay';
-                color: #232323;
-                margin-bottom: 10px;
-            }
-            img{
-                position: absolute;
-                bottom: 20px;
-                right: 20px;
-                width: 37px;
-            }
+        h2{
+            max-width: 478px;
+            line-height: 1.45;
+        }
+        p{
+            font-weight: 300;
+            font-size: 1.25rem;
+            line-height: 1.6rem;
+            font-family: 'SFProDisplay';
+            color: #232323;
         }
     }
 }
