@@ -81,4 +81,36 @@ $(document).ready(function(){
             }
         });
     }
+
+
+    maps();
 });
+
+
+function maps() {
+    var map,myDivIcon;
+
+    DG.then(function () {
+        map = DG.map('map', {
+            center: [43.272505,76.925266],
+            zoom: 13
+        });
+
+        myDivIcon = DG.divIcon({
+            iconSize: [50, 80],
+            html: '<button class="myDivIcon" type="button"><i class="fa-sharp fa-solid fa-location-dot"></i></button>'
+        });
+        DG.marker([43.272505,76.925266], {
+            icon: myDivIcon
+        }).addTo(map);
+
+        $('.contact-gl-btn-close').on('click',function(){
+            $('.contact-gl-info').removeClass('active');
+        });
+    
+        $('.myDivIcon').on('click',function(){
+            $('.contact-gl-info').addClass('active');
+        });
+
+    });
+}

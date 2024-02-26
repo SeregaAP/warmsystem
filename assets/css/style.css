@@ -2314,6 +2314,146 @@ p {
   color: #fff;
 }
 
+.contact-gl {
+  background: #F4F4F4;
+  padding: 80px 0;
+}
+.contact-gl__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+.contact-gl__title .title {
+  max-width: 320px;
+}
+.contact-gl__title p {
+  max-width: 445px;
+}
+.contact-gl .contact-gl_map {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+.contact-gl .contact-gl_map .leaflet-tile-pane {
+  filter: url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+.contact-gl .contact-gl_map .leaflet-marker-icon {
+  border: none;
+  background: none;
+}
+.contact-gl .contact-gl_map .myDivIcon {
+  background: none;
+  cursor: pointer;
+}
+.contact-gl .contact-gl_map .myDivIcon i {
+  font-size: 3rem;
+  color: red;
+  -webkit-filter: unset;
+          filter: unset;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.contact-gl .contact-gl_map .myDivIcon:hover i {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.contact-gl .contact-gl_map .contact-gl-info {
+  display: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 60px;
+  width: 340px;
+  padding: 18px;
+  background: #fff;
+  border-radius: 10px;
+  z-index: 500;
+}
+.contact-gl .contact-gl_map .contact-gl-info .contact-gl-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.contact-gl .contact-gl_map .contact-gl-info .contact-gl-header .contact-gl-btn-close {
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background: none;
+}
+.contact-gl .contact-gl_map .contact-gl-info .contact-gl-header .contact-gl-btn-close i {
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.contact-gl .contact-gl_map .contact-gl-info .contact-gl-header .contact-gl-btn-close:hover i {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.contact-gl .contact-gl_map .contact-gl-info .contact-gl-itm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact-gl .contact-gl_map .contact-gl-info .contact-gl-itm span {
+  color: #232323;
+  font-weight: 500;
+  font-size: 1.25rem;
+  font-family: "SFProDisplay";
+  margin-bottom: 5px;
+}
+.contact-gl .contact-gl_map .contact-gl-info .contact-gl-itm p {
+  color: #232323;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-family: "SFProDisplay";
+  margin-bottom: 15px;
+}
+.contact-gl .contact-gl_map .contact-gl-info .contact-gl-itm a {
+  color: #232323;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-family: "SFProDisplay";
+  margin-bottom: 8px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.contact-gl .contact-gl_map .contact-gl-info .contact-gl-itm a:hover {
+  color: #F03222;
+}
+.contact-gl .contact-gl_map .contact-gl-info.active {
+  display: block;
+}
+
 @media screen and (max-width: 1200px) {
   .hero .hero_cnt {
     top: 54%;
