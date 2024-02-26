@@ -1721,6 +1721,9 @@ p{
                 margin: 0 auto 15px auto;
                 .swiper-wrapper{
                     .swiper-slide{
+                        border: none;
+                        outline: none;
+                        background: none;
                         img{
                             width: 100%;
                         }
@@ -1860,6 +1863,70 @@ p{
             }
             &.active{
                 display: block;
+            }
+        }
+    }
+}
+
+.footer{
+    padding: 12px 0;
+    .footer__cnt{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 0;
+        
+        .footer-logo{
+            width: 312px;
+            height: 39px;
+        }
+        a{
+            color: $txt;
+            font-weight: 400;
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+            font-family: 'SFProDisplay';
+        }
+        .footer__soc{
+            display: flex;
+           a{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background:#c5c4c4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            margin-left: 10px;
+            i{
+                font-size: 0.8rem;
+            }
+            &:hover{
+                background: $red;
+            }
+           }
+        }
+    }
+    .footer__copy{
+        .footer__copy_el-l{
+            display: flex;
+            align-items: center;
+            span{
+                display: inline-block;
+                font-weight: 300;
+                font-size: 0.8rem;
+                line-height: 1.1rem;
+                font-family: 'SFProDisplay';
+                color: $txt;
+                margin-right: 30px;
+            }
+            a{
+                font-weight: 300;
+                font-size: 0.8rem;
+                line-height: 1.1rem;
+                font-family: 'SFProDisplay';
+                color: $txt;
             }
         }
     }

@@ -51,10 +51,6 @@ $(document).ready(function(){
             slideShadows : true,
             },
             navigation:{ nextEl: ".arrow-left", prevEl: ".arrow-right" },
-            //pagination: {
-            //el: '.swiper-pagination',
-           // clickable: true,
-            //},
             breakpoints: {
                 // when window width is >= 320px
                 320: {
