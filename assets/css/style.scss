@@ -152,6 +152,7 @@ p{
         color: $red;
     }
 }
+
 .subtitle {
     font-weight: 400;
     font-family: 'SFProDisplay';
@@ -266,6 +267,103 @@ p{
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+.product__item {
+    position: relative;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    transition: 0.2s linear;
+    &:hover{
+        box-shadow: 0 0 5px #c7c6c6;
+    }
+}
+
+.product__form {
+    padding-top: 19px;
+    .product-quality-link{
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.product__image {
+    text-align: center;
+    .image-group{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        display: flex;
+        flex-direction: column;
+        .img-el{
+            background: none;
+            cursor: pointer;
+            &:hover{
+                svg{
+                    stroke: $red;
+                }
+            }
+        }
+    }
+}
+
+.product__itm-txt {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    h4{
+        font-weight: 500;
+        font-size: 1rem;
+        font-family: 'SFProDisplay';
+        margin-bottom: 10px;
+    }
+    .articul{
+        font-weight: 500;
+        font-size: 0.87rem;
+        font-family: 'SFProDisplay';
+        margin-bottom: 10px;
+        color: #000;
+        span{
+            color:#989898;
+        }
+    }
+    .price{
+        font-weight: 500;
+        font-size: 1.37rem;
+        font-family: 'SFProDisplay';
+        margin-bottom: 10px;
+        color: #1F1F1F;
+    }
+    .old_price{
+        font-weight: 300;
+        font-size: 1rem;
+        font-family: 'SFProDisplay';
+        margin-bottom: 3px;
+        color:#989898;
+        text-decoration: line-through;
+    }
+    .product__itm-group{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 100;
+        .itm-link{
+            font-weight: 400;
+            font-size: 0.93rem;
+            font-family: 'SFProDisplay';
+            color: #000;
+            border-bottom: 1px solid #000;
+            &:hover{
+                color: $red;
+                border-color: $red;
             }
         }
     }
@@ -720,99 +818,6 @@ p{
         grid-template-columns: 24% 24% 24% 24%;
         column-gap: 1.33%;
         margin-bottom: 35px;
-    }
-    &__item {
-        position: relative;
-        border: 1px solid #E1E1E1;
-        border-radius: 4px;
-        transition: 0.2s linear;
-        &:hover{
-            box-shadow: 0 0 5px #c7c6c6;
-        }
-    }
-	&__form {
-        padding-top: 19px;
-        .quality-quality-link{
-            position: absolute;
-            display: block;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-	}
-	&__image {
-        text-align: center;
-        .image-group{
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            display: flex;
-            flex-direction: column;
-            .img-el{
-                background: none;
-                cursor: pointer;
-                &:hover{
-                    svg{
-                        stroke: $red;
-                    }
-                }
-            }
-        }
-	}
-    &__itm-txt {
-        padding: 20px 20px;
-        display: flex;
-        flex-direction: column;
-        h4{
-            font-weight: 500;
-            font-size: 1rem;
-            font-family: 'SFProDisplay';
-            margin-bottom: 10px;
-        }
-        .articul{
-            font-weight: 500;
-            font-size: 0.87rem;
-            font-family: 'SFProDisplay';
-            margin-bottom: 10px;
-            color: #000;
-            span{
-                color:#989898;
-            }
-        }
-        .price{
-            font-weight: 500;
-            font-size: 1.37rem;
-            font-family: 'SFProDisplay';
-            margin-bottom: 10px;
-            color: #1F1F1F;
-        }
-        .old_price{
-            font-weight: 300;
-            font-size: 1rem;
-            font-family: 'SFProDisplay';
-            margin-bottom: 3px;
-            color:#989898;
-            text-decoration: line-through;
-        }
-        .quality__itm-group{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-            z-index: 100;
-            .itm-link{
-                font-weight: 400;
-                font-size: 0.93rem;
-                font-family: 'SFProDisplay';
-                color: #000;
-                border-bottom: 1px solid #000;
-                &:hover{
-                    color: $red;
-                    border-color: $red;
-                }
-            }
-        }
     }
     &__btngroup {
         display: flex;
@@ -1600,7 +1605,7 @@ p{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 55px;
+        margin-bottom: 35px;
         h2{
             max-width: 1099px;
         }
@@ -1610,7 +1615,139 @@ p{
     }
     &__list{
         .project-gl-itm{
+            display: flex;
+            background: #fff;
+            border-radius: 4px;
+            padding: 35px;
+            margin-bottom: 20px;
+            .project-gl_sl{
+                width: 56%;
+                margin-right: 4%;
+                .project-gl-slider{
+                        .fotorama__wrap{
+                            .fotorama__stage {
+                                margin-bottom: 7px;
+                            }
+                            .fotorama__nav-wrap{
+                                .fotorama__nav{
+                                    .fotorama__nav__shaft{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        width: 100% ;
+                                        .fotorama__thumb-border{
+                                            display: none;
+                                        }
+                                        .fotorama__nav__frame{
+                                            margin: 0;
+                                            padding: 0;
+                                            width: 80px !important;
+                                            border: 2px solid transparent !important;
+                                            .fotorama__thumb{
+                                                img{
+                                                    width: 100% !important;
+                                                    object-fit: cover;
+                                                    left: 0 !important;
+                                                }
+                                            }
+                                        }
+                                        .fotorama__active{
+                                            border-color: $red !important;
+                                        }
+                                    }
+                                }
+                             }
+                        }
+          
 
+                }
+            }
+            .project-gl_info{
+                width: 40%;
+                h3{
+                    font-weight: 500;
+                    font-size: 1.4rem;
+                    line-height: 1.5rem;
+                    text-transform: uppercase;
+                    font-family: 'SFProDisplay';
+                    color: #232323;
+                    margin-bottom: 20px;
+                    min-height: 48px;
+                }
+                ul{
+                    margin-bottom: 20px;
+                    min-height: 160px;
+                    li{
+                        font-weight: 400;
+                        font-size: 1.25rem;
+                        line-height: 1.5rem;
+                        font-family: 'SFProDisplay';
+                        color: #232323;
+                        margin-bottom: 6px;
+                    }
+                }
+                .btn-light,.btn-dark{
+                    margin-bottom: 20px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.reviews{
+    padding: 80px 0;
+    .reviews__cnt{
+        display: flex;
+        .reviews__info{
+            width: 37%;
+            margin-right: 3%;
+            .title{
+                margin-bottom: 40px;
+            }
+            p{
+                font-weight: 400;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                font-family: 'SFProDisplay';
+                color: #232323;
+                margin-bottom: 10px;
+            }
+        }
+        .reviews__sl-block{
+            width: 60%;
+            .swiper-container{
+                width: 80%;
+                padding: 0 10px;
+                margin: 0 auto 15px auto;
+                .swiper-wrapper{
+                    .swiper-slide{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .swiper_control{
+                display: flex;
+                justify-content: center;
+                .sw-btn{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    &.arrow-left{
+                        margin-right: 12px;
+                        
+                    }
+                    &:hover{
+                        background: $red;
+                        color: #fff;
+                    }
+                }
+            }
         }
     }
 }

@@ -1,5 +1,12 @@
 $(document).ready(function(){
     $(".fancybox").fancybox();
+
+    $('.fotorama').fotorama({
+        maxwidth: '100%',
+        //ratio: 16/9,
+        //allowfullscreen: true,
+        nav: 'thumbs'
+    });
     
     $('.hero-slider').slick({
         slidesToShow: 1,
@@ -30,4 +37,48 @@ $(document).ready(function(){
         prevArrow: $('.sert-sl-back'),
         nextArrow: $('.sert-sl-next'),
     });
+
+    if($('.swiper-container').length){
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 5,
+            slideShadows : true,
+            },
+            navigation:{ nextEl: ".arrow-left", prevEl: ".arrow-right" },
+            //pagination: {
+            //el: '.swiper-pagination',
+           // clickable: true,
+            //},
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    slideToClickedSlide: true,
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    slideToClickedSlide: true,
+                },
+                // when window width is >= 640px
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    slideToClickedSlide: true,
+                    loop: true,
+                    loopedSlides: 5,
+                    slidesPerView: 2,
+                    modifier: 5,
+                }
+            }
+        });
+    }
 });
