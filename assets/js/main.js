@@ -12,6 +12,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay:true,
+        speed: 1000,
         infinite: true,
         pauseOnHover: false,
         prevArrow: $('.btn-hero-sl_next'),
@@ -23,6 +24,20 @@ $(document).ready(function(){
         slidesToScroll: 1,
         prevArrow: $('.report-sl-back'),
         nextArrow: $('.report-sl-next'),
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                speed: 300,
+                autoplay: false,
+                swipeToSlide: true,
+                centerMode: true,
+                infinite: true
+              }
+            }
+          ]
     });
 
     $('.sertificate_lsider').slick({
@@ -35,49 +50,85 @@ $(document).ready(function(){
         nextArrow: $('.sert-sl-next'),
     });
 
-    if($('.swiper-container').length){
-        var swiper = new Swiper('.swiper-container', {
-            effect: 'coverflow',
-            grabCursor: true,
-            centeredSlides: true,
-            coverflowEffect: {
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 5,
-            slideShadows : true,
-            },
-            navigation:{ nextEl: ".arrow-left", prevEl: ".arrow-right" },
-            breakpoints: {
-                // when window width is >= 320px
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                    slideToClickedSlide: true,
-                },
-                // when window width is >= 480px
-                480: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                    slideToClickedSlide: true,
-                },
-                // when window width is >= 640px
-                992: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                    slideToClickedSlide: true,
-                    loop: true,
-                    loopedSlides: 5,
-                    slidesPerView: 2,
-                    modifier: 5,
-                }
-            }
-        });
-    }
+    $('.reviews_slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplaySpeed: 5000,
+        autoplay: false,
+        swipeToSlide: true,
+        centerMode: true,
+        prevArrow: $('.review-left'),
+        nextArrow: $('.review-right'),
+    });
 
+    
+
+
+
+    $('.burger').on('click',function(){
+        $(this).toggleClass('active');
+        $('.mobile-menu').toggleClass('active');
+        $('.header').toggleClass('dark');
+    });
+
+    $('.btn-mob-link').on('click',function(){
+        var ul = $(this).parent();
+        var ul = $(ul).parent();
+        var ul = $(ul).children('ul');
+        $(ul).toggleClass('active');
+        $(this).toggleClass('active');
+    });
 
     maps();
 });
+
+
+window.addEventListener("scroll", function(e) {
+    if($('.burger').hasClass('active') && $('.mobile-menu').hasClass('active')){
+        $('.burger').toggleClass('active');
+        $('.mobile-menu').toggleClass('active');
+        $('.header').toggleClass('dark');
+    }
+    if (window.pageYOffset > 50) {
+        $('.to-top' ).addClass('active');
+        //$('.mobile-fixed_menu').addClass('active');
+    } else {
+        $('.to-top' ).removeClass('active');
+        //$('.mobile-fixed_menu').removeClass('active');
+    }
+});
+
+const menu_links = document.querySelectorAll('.menu-link[data-goto]');
+if(menu_links.length > 0){
+    menu_links.forEach(menu_link =>{
+      menu_link.addEventListener("click",onMenuClick);
+    });
+    function onMenuClick(e) {
+      const menuLink = e.target;
+      const menu_bottom_item = document.querySelectorAll('.h-item');
+      menu_bottom_item.forEach(menu_itm =>{
+        $(menu_itm).removeClass('active');
+      });
+      if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)){
+        $(menuLink).parent().addClass('active');
+        if(menuLink.dataset.goto !='.offer'){
+          if(menuLink.dataset.goto !='.page-section-33'){
+            if($(".basic__btn-mobile").hasClass("active")){
+                $(".basic__btn-mobile").toggleClass("active");
+                $(".menu-mob").toggleClass("active");
+            }
+          }
+        }
+        const gotoBlock = document.querySelector(menuLink.dataset.goto);
+        const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('.header').offsetHeight;
+        window.scrollTo({
+          top: gotoBlockValue,
+          behavior: "smooth"
+        });
+        e.preventDefault();
+      }
+    }
+}
 
 
 function maps() {
