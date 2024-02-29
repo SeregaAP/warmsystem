@@ -21,9 +21,6 @@ $(document).ready(function(){
     $('.report__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay:true,
-        infinite: true,
-        pauseOnHover: false,
         prevArrow: $('.report-sl-back'),
         nextArrow: $('.report-sl-next'),
     });
