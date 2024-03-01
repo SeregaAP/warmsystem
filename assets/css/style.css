@@ -234,7 +234,7 @@
   border-radius: 5px;
 }
 .form_control .form_control_container .form_control_container__time {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 400;
   font-family: "Roboto";
   color: #adadad;
@@ -242,7 +242,7 @@
 }
 .form_control .form_control_container .form_control_container__time__input {
   width: 100%;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: "Roboto";
   font-weight: 400;
   /*&::-webkit-outer-spin-button,
@@ -386,6 +386,14 @@ p {
   background: #F4F4F4;
 }
 
+.white {
+  background: #fff;
+}
+
+.pb {
+  padding-bottom: 60px;
+}
+
 .btn-dark {
   position: relative;
   background: #F03222;
@@ -482,6 +490,31 @@ p {
   cursor: pointer;
 }
 .btn-light-sm:hover {
+  background: #F03222;
+  color: #fff;
+}
+
+.btn-white {
+  background: #fff;
+  width: 400px;
+  height: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  color: #1F1F1F;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "SFProDisplay";
+  cursor: pointer;
+}
+.btn-white:hover {
   background: #F03222;
   color: #fff;
 }
@@ -643,6 +676,7 @@ p {
   border-radius: 4px;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
+  background: #fff;
 }
 .product__item:hover {
   -webkit-box-shadow: 0 0 5px #c7c6c6;
@@ -2936,15 +2970,239 @@ p {
   display: flex;
 }
 .catalog .catalog__cnt .catalog_side-bar {
-  width: 30%;
+  width: 25%;
+}
+.catalog .catalog__cnt .catalog_side-bar .filter-block {
   background: #fff;
   padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 40px;
 }
-.catalog .catalog__cnt .catalog_side-bar .filter-price h4 {
+.catalog .catalog__cnt .catalog_side-bar .filter-block .filter-items {
+  margin-bottom: 20px;
+}
+.catalog .catalog__cnt .catalog_side-bar .filter-block .filter-items h4 {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-family: "SFProDisplay";
+  color: #232323;
   margin-bottom: 15px;
 }
+.catalog .catalog__cnt .catalog_side-bar .filter-block .filter-items .box-item .item__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 9px;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  font-family: "SFProDisplay";
+  color: #232323;
+}
+.catalog .catalog__cnt .catalog_side-bar .filter-block .filter-items .box-item .item__filter input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.catalog .catalog__cnt .catalog_side-bar .filter-block .filter-items .box-item .item__filter input[type=checkbox] {
+  accent-color: #F03222;
+}
+.catalog .catalog__cnt .catalog_side-bar .filter-block .filter-items .box-item .item__filter sup {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-family: "SFProDisplay";
+  color: #232323;
+  margin-left: auto;
+}
+.catalog .catalog__cnt .catalog_side-bar .filter-block .btn-white {
+  width: 100%;
+  border: 1px solid #DBDEE1;
+}
+.catalog .catalog__cnt .catalog_side-bar .sidebar-banner-list .sidebar-banner img {
+  width: 100%;
+}
 .catalog .catalog__cnt .catalog_category {
-  width: 65%;
+  margin-left: 2%;
+  width: 73%;
+  padding-bottom: 50px;
+}
+.catalog .catalog__cnt .catalog_category .catalog_banner {
+  margin-bottom: 12px;
+}
+.catalog .catalog__cnt .catalog_category .catalog_banner img {
+  width: 100%;
+}
+.catalog .catalog__cnt .catalog_category .catalog-btn-block {
+  margin-bottom: 20px;
+}
+.catalog .catalog__cnt .catalog_category .catalog-btn-block .product-length {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-family: "SFProDisplay";
+  color: #A2A3B1;
+  margin-bottom: 12px;
+}
+.catalog .catalog__cnt .catalog_category .catalog-btn-block .catalog-btn-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.catalog .catalog__cnt .catalog_category .catalog-btn-block .catalog-btn-list .btn-link-cat {
+  background: #fff;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  font-family: "SFProDisplay";
+  color: #546272;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 9px 9px 0;
+}
+.catalog .catalog__cnt .catalog_category .catalog-btn-block .catalog-btn-list .btn-link-cat.active {
+  border: 1px solid #232323;
+}
+
+.product .product_list {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  -webkit-column-gap: 2%;
+     -moz-column-gap: 2%;
+          column-gap: 2%;
+  row-gap: 15px;
+  margin-bottom: 20px;
+}
+.product .block-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.product .block-pagination .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.product .block-pagination .pagination .page-item {
+  margin: 0 5px;
+}
+.product .block-pagination .pagination .page-item .page-link {
+  color: #9E9E9E;
+}
+.product .block-pagination .pagination .page-item.active .page-link {
+  color: #000;
+}
+.product .block-pagination .pagination .page-item:first-child span, .product .block-pagination .pagination .page-item:first-child a, .product .block-pagination .pagination .page-item:last-child span, .product .block-pagination .pagination .page-item:last-child a {
+  font-size: 0;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.product .block-pagination .pagination .page-item:last-child span::before, .product .block-pagination .pagination .page-item:last-child a::before {
+  font-family: "Font Awesome 6 Pro";
+  content: "\f105";
+  font-size: 1rem;
+}
+.product .block-pagination .pagination .page-item:first-child span::before, .product .block-pagination .pagination .page-item:first-child a::before {
+  font-family: "Font Awesome 6 Pro";
+  content: "\f104";
+  font-size: 1rem;
+}
+
+.questions {
+  padding: 70px 0;
+  background: #fff;
+}
+.questions .questions__cnt .questions_list {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  -webkit-column-gap: 2%;
+     -moz-column-gap: 2%;
+          column-gap: 2%;
+  row-gap: 17px;
+}
+.questions .questions__cnt .questions_list .questions_itm {
+  position: relative;
+}
+.questions .questions__cnt .questions_list .questions_itm .questions_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.questions .questions__cnt .questions_list .questions_itm .questions_header h4 {
+  color: #232323;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-family: "HelveticaNeueCyr";
+}
+.questions .questions__cnt .questions_list .questions_itm .questions_header .questions_itm-btn {
+  width: 35px;
+  height: 35px;
+  background: none;
+  cursor: pointer;
+}
+.questions .questions__cnt .questions_list .questions_itm .questions_header .questions_itm-btn i {
+  color: #F03222;
+  font-size: 1.5rem;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.questions .questions__cnt .questions_list .questions_itm .questions_header .questions_itm-btn.active i {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.questions .questions__cnt .questions_list .questions_itm .questions-answer {
+  background: #fff;
+  padding: 15px 0;
+  display: none;
+  border-bottom: 1px solid #DADADA;
+}
+.questions .questions__cnt .questions_list .questions_itm .questions-answer p {
+  color: #232323;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-family: "SFProDisplay";
+  color: #303030;
+  max-width: 450px;
+}
+.questions .questions__cnt .questions_list .questions_itm .questions-answer.active {
+  display: block;
 }
 
 .footer {

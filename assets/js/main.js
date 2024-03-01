@@ -79,6 +79,16 @@ $(document).ready(function(){
         $(this).toggleClass('active');
     });
 
+    $('.questions_itm-btn').on('click',function(){
+        $('.questions-answer').removeClass('active');
+        $('.questions_itm-btn').removeClass('active');
+        $(this).addClass('active');
+        var list = $(this).parent();
+        list = $(list).parent();
+        list = $(list).children('.questions-answer');
+        $(list).addClass('active');
+    });
+
     maps();
 });
 
