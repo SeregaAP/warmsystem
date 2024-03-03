@@ -1042,7 +1042,6 @@ p{
                 }
             }
             .hero_cnt_list{
-                width: 30%;
                 display: flex;
                 flex-direction: column;
                 align-items: end;
@@ -1906,102 +1905,6 @@ p{
     }
 }
 
-.project-gl{
-    padding: 70px 0;
-    background: #F4F4F4;
-    &__title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 35px;
-        h2{
-            max-width: 1099px;
-        }
-        span{
-            color: $red;
-        }
-    }
-    &__list{
-        .project-gl-itm{
-            display: flex;
-            background: #fff;
-            border-radius: 4px;
-            padding: 35px;
-            margin-bottom: 20px;
-            .project-gl_sl{
-                width: 56%;
-                margin-right: 4%;
-                .project-gl-slider{
-                        .fotorama__wrap{
-                            .fotorama__stage {
-                                margin-bottom: 7px;
-                            }
-                            .fotorama__nav-wrap{
-                                .fotorama__nav{
-                                    .fotorama__nav__shaft{
-                                        display: flex;
-                                        justify-content: space-between;
-                                        width: 100% ;
-                                        .fotorama__thumb-border{
-                                            display: none;
-                                        }
-                                        .fotorama__nav__frame{
-                                            margin: 0;
-                                            padding: 0;
-                                            width: 80px !important;
-                                            border: 2px solid transparent !important;
-                                            .fotorama__thumb{
-                                                img{
-                                                    width: 100% !important;
-                                                    object-fit: cover;
-                                                    left: 0 !important;
-                                                }
-                                            }
-                                        }
-                                        .fotorama__active{
-                                            border-color: $red !important;
-                                        }
-                                    }
-                                }
-                             }
-                        }
-          
-
-                }
-            }
-            .project-gl_info{
-                width: 40%;
-                h3{
-                    font-weight: 500;
-                    font-size: 1.4rem;
-                    line-height: 1.5rem;
-                    text-transform: uppercase;
-                    font-family: 'SFProDisplay';
-                    color: #232323;
-                    margin-bottom: 20px;
-                    min-height: 48px;
-                }
-                ul{
-                    margin-bottom: 20px;
-                    min-height: 160px;
-                    li{
-                        font-weight: 400;
-                        font-size: 1.25rem;
-                        line-height: 1.5rem;
-                        font-family: 'SFProDisplay';
-                        color: #232323;
-                        margin-bottom: 6px;
-                    }
-                }
-                .btn-light,.btn-dark{
-                    margin-bottom: 20px;
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
-
 .reviews{
     padding: 80px 0;
     .reviews__cnt{
@@ -2191,7 +2094,6 @@ p{
             width: 25%;
             .filter-block{
                 background: #fff;
-                padding: 20px;
                 border-radius: 6px;
                 margin-bottom: 40px;
                 .filter-items{
@@ -2761,7 +2663,6 @@ p{
                 margin-bottom: 40px;
             }
             .report__sl-block{
-                width: 100%;
                 .report__slider{
                    width: 70%;
                    .slick-list{
