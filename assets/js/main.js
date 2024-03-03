@@ -19,26 +19,48 @@ $(document).ready(function(){
         nextArrow: $('.btn-hero-sl_prev'),
     });
 
-    $('.report__slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: $('.report-sl-back'),
-        nextArrow: $('.report-sl-next'),
-        responsive: [
-            {
-              breakpoint: 1200,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                speed: 300,
-                autoplay: false,
-                swipeToSlide: true,
-                centerMode: true,
-                infinite: true
+    const swiper = new Swiper('.report__slider', {
+        direction: 'horizontal',
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        navigation: {
+          nextEl: '.report-sl-back',
+          prevEl: '.report-sl-next',
+        },
+        breakpoints: {
+            1201: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            320: {
+                slidesPerView: 3,
+                spaceBetween: 20,
               }
-            }
-          ]
+          },
     });
+
+    const swiper2 = new Swiper('.review_sl', {
+        direction: 'horizontal',
+        loop: true,
+
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        navigation: {
+          nextEl: '.review-left',
+          prevEl: '.review-right',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              }
+          },
+    });
+
+
 
     $('.sertificate_lsider').slick({
         slidesToShow: 4,
@@ -48,18 +70,18 @@ $(document).ready(function(){
         pauseOnHover: false,
         prevArrow: $('.sert-sl-back'),
         nextArrow: $('.sert-sl-next'),
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            }
+          }
+        ]
     });
 
-    $('.reviews_slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplaySpeed: 5000,
-        autoplay: false,
-        swipeToSlide: true,
-        centerMode: true,
-        prevArrow: $('.review-left'),
-        nextArrow: $('.review-right'),
-    });
+    
 
     
 
@@ -87,6 +109,10 @@ $(document).ready(function(){
         list = $(list).parent();
         list = $(list).children('.questions-answer');
         $(list).addClass('active');
+    });
+
+    $('.close-filter-bar').on('click',function(){
+      $('.catalog_side-bar').removeClass('active');
     });
 
     maps();

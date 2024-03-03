@@ -13,7 +13,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title>Главная</title>
+    <title>Каталог</title>
 </head>
 <body class="dark">
     <div class="wrap page-section-z">
@@ -288,119 +288,123 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="catalog__cnt">
-                                <div class="catalog_side-bar">
+                                <div class="catalog_side-bar active">
+                                    <button class="close-filter-bar"><i class="fa-regular fa-xmark"></i></button>
                                     <div class="filter-block">
                                         <form>
-                                            <div class="filter-items">
-                                                <h4>Цена в тг</h4>
-                                                <!-------------------------------->
-                                                <div class="range_container">
-                                                    <div class="sliders_control">
-                                                        <input id="fromSlider" type="range" value="120000" min="0" max="100000000"/>
-                                                        <input id="toSlider" type="range" value="190800000" min="0" max="100000000"/>
-                                                    </div>
-                                                    <div class="form_control">
-                                                        <div class="form_control_container">
-                                                            <div class="form_control_container__time">от</div>
-                                                            <input  class="form_control_container__time__input" type="text" id="fromInput" value="120 000" min="0" max="100000000"/>
+                                            <div class="filter__list">
+                                                <div class="filter-items">
+                                                    <h4>Цена в тг</h4>
+                                                    <!-------------------------------->
+                                                    <div class="range_container">
+                                                        <div class="sliders_control">
+                                                            <input id="fromSlider" type="range" value="120000" min="0" max="100000000"/>
+                                                            <input id="toSlider" type="range" value="190800000" min="0" max="100000000"/>
                                                         </div>
-                                                        <div class="form_control_container">
-                                                            <div class="form_control_container__time">до</div>
-                                                            <input class="form_control_container__time__input" type="text" id="toInput" value="190 800 000" min="0" max="100000000"/>
+                                                        <div class="form_control">
+                                                            <div class="form_control_container">
+                                                                <div class="form_control_container__time">от</div>
+                                                                <input  class="form_control_container__time__input" type="text" id="fromInput" value="120 000" min="0" max="100000000"/>
+                                                            </div>
+                                                            <div class="form_control_container">
+                                                                <div class="form_control_container__time">до</div>
+                                                                <input class="form_control_container__time__input" type="text" id="toInput" value="190 800 000" min="0" max="100000000"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!---------------------------------->
+                                                </div>
+                                                <div class="filter-items" id="mse2_msoption|mater">
+                                                    <h4>Бренд</h4>
+                                                     <div class="box-item">
+                                                        <div class="item__filter">
+                                                            <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_0" value="ткань">Buderus<sup>32</sup>
+                                                            <label for="mse2_msoption|mater_0" class=""> </label>
+                                                        </div>
+                                                        <div class="item__filter">
+                                                            <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">Viessmann<sup>4</sup>
+                                                            <label for="mse2_msoption|mater_1" class=""></label>
+                                                        </div>
+                                                        <div class="item__filter">
+                                                            <input checked type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">Bosch<sup>7</sup>
+                                                            <label for="mse2_msoption|mater_1" class=""></label>
+                                                        </div>
+                                                        <div class="item__filter">
+                                                            <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">K-FLEX<sup>120</sup>
+                                                            <label for="mse2_msoption|mater_1" class=""></label>
+                                                        </div>
+                                                        <div class="item__filter">
+                                                            <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">TECH<sup>65</sup>
+                                                            <label for="mse2_msoption|mater_1" class=""></label>
+                                                        </div>
+                                                        <div class="item__filter">
+                                                            <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">Wolf<sup>7</sup>
+                                                            <label for="mse2_msoption|mater_1" class=""></label>
+                                                        </div>
+                                                        <div class="item__filter">
+                                                            <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">Ariston<sup>120</sup>
+                                                            <label for="mse2_msoption|mater_1" class=""></label>
+                                                        </div>
+                                                        <div class="item__filter">
+                                                            <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">Vaillant<sup>65</sup>
+                                                            <label for="mse2_msoption|mater_1" class=""></label>
+                                                        </div>
+                                                        <div class="item__filter">
+                                                            <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">CRONOS<sup>65</sup>
+                                                            <label for="mse2_msoption|mater_1" class=""></label>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <!---------------------------------->
-                                            </div>
-                                            <div class="filter-items" id="mse2_msoption|mater">
-                                                <h4>Бренд</h4>
-                                                 <div class="box-item">
-                                                    <div class="item__filter">
-                                                        <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_0" value="ткань">Buderus<sup>32</sup>
-                                                        <label for="mse2_msoption|mater_0" class=""> </label>
-                                                    </div>
-                                                    <div class="item__filter">
-                                                        <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">Viessmann<sup>4</sup>
-                                                        <label for="mse2_msoption|mater_1" class=""></label>
-                                                    </div>
-                                                    <div class="item__filter">
-                                                        <input checked type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">Bosch<sup>7</sup>
-                                                        <label for="mse2_msoption|mater_1" class=""></label>
-                                                    </div>
-                                                    <div class="item__filter">
-                                                        <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">K-FLEX<sup>120</sup>
-                                                        <label for="mse2_msoption|mater_1" class=""></label>
-                                                    </div>
-                                                    <div class="item__filter">
-                                                        <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">TECH<sup>65</sup>
-                                                        <label for="mse2_msoption|mater_1" class=""></label>
-                                                    </div>
-                                                    <div class="item__filter">
-                                                        <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">Wolf<sup>7</sup>
-                                                        <label for="mse2_msoption|mater_1" class=""></label>
-                                                    </div>
-                                                    <div class="item__filter">
-                                                        <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">Ariston<sup>120</sup>
-                                                        <label for="mse2_msoption|mater_1" class=""></label>
-                                                    </div>
-                                                    <div class="item__filter">
-                                                        <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">Vaillant<sup>65</sup>
-                                                        <label for="mse2_msoption|mater_1" class=""></label>
-                                                    </div>
-                                                    <div class="item__filter">
-                                                        <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">CRONOS<sup>65</sup>
-                                                        <label for="mse2_msoption|mater_1" class=""></label>
+                                                <div class="filter-items" id="mse2_msoption|mater">
+                                                    <h4>Тип топлива</h4>
+                                                     <div class="box-item">
+                                                        <div class="item__filter">
+                                                            <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_0" value="ткань">Газ<sup>32</sup>
+                                                            <label for="mse2_msoption|mater_0" class=""> </label>
+                                                        </div>
+                                                        <div class="item__filter">
+                                                            <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">Электро<sup>4</sup>
+                                                            <label for="mse2_msoption|mater_1" class=""></label>
+                                                        </div>
+                                                        <div class="item__filter">
+                                                            <input checked type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">Многотопливный<sup>7</sup>
+                                                            <label for="mse2_msoption|mater_1" class=""></label>
+                                                        </div>
+                                                        <div class="item__filter">
+                                                            <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">CRONOS<sup>120</sup>
+                                                            <label for="mse2_msoption|mater_1" class=""></label>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="filter-items" id="mse2_msoption|mater">
-                                                <h4>Тип топлива</h4>
-                                                 <div class="box-item">
-                                                    <div class="item__filter">
-                                                        <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_0" value="ткань">Газ<sup>32</sup>
-                                                        <label for="mse2_msoption|mater_0" class=""> </label>
-                                                    </div>
-                                                    <div class="item__filter">
-                                                        <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">Электро<sup>4</sup>
-                                                        <label for="mse2_msoption|mater_1" class=""></label>
-                                                    </div>
-                                                    <div class="item__filter">
-                                                        <input checked type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">Многотопливный<sup>7</sup>
-                                                        <label for="mse2_msoption|mater_1" class=""></label>
-                                                    </div>
-                                                    <div class="item__filter">
-                                                        <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">CRONOS<sup>120</sup>
-                                                        <label for="mse2_msoption|mater_1" class=""></label>
+                                                <div class="filter-items" id="mse2_msoption|mater">
+                                                    <h4>Способ установки</h4>
+                                                     <div class="box-item">
+                                                        <div class="item__filter">
+                                                            <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_0" value="ткань">Настенный<sup>32</sup>
+                                                            <label for="mse2_msoption|mater_0" class=""> </label>
+                                                        </div>
+                                                        <div class="item__filter">
+                                                            <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">Напольный<sup>4</sup>
+                                                            <label for="mse2_msoption|mater_1" class=""></label>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="filter-items" id="mse2_msoption|mater">
-                                                <h4>Способ установки</h4>
-                                                 <div class="box-item">
-                                                    <div class="item__filter">
-                                                        <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_0" value="ткань">Настенный<sup>32</sup>
-                                                        <label for="mse2_msoption|mater_0" class=""> </label>
-                                                    </div>
-                                                    <div class="item__filter">
-                                                        <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">Напольный<sup>4</sup>
-                                                        <label for="mse2_msoption|mater_1" class=""></label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="filter-items" id="mse2_msoption|mater">
-                                                <h4>Количество контуров</h4>
-                                                 <div class="box-item">
-                                                    <div class="item__filter">
-                                                        <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_0" value="ткань">1<sup>32</sup>
-                                                        <label for="mse2_msoption|mater_0" class=""> </label>
-                                                    </div>
-                                                    <div class="item__filter">
-                                                        <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">2<sup>4</sup>
-                                                        <label for="mse2_msoption|mater_1" class=""></label>
+                                                <div class="filter-items" id="mse2_msoption|mater">
+                                                    <h4>Количество контуров</h4>
+                                                     <div class="box-item">
+                                                        <div class="item__filter">
+                                                            <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_0" value="ткань">1<sup>32</sup>
+                                                            <label for="mse2_msoption|mater_0" class=""> </label>
+                                                        </div>
+                                                        <div class="item__filter">
+                                                            <input type="checkbox" name="msoption|mater" id="mse2_msoption|mater_1" value="экокожа">2<sup>4</sup>
+                                                            <label for="mse2_msoption|mater_1" class=""></label>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <button class="btn-white" type="button">Сбросить фильтр</button>
                                             </div>
-                                            <button class="btn-white" type="button">Сбросить фильтр</button>
+                                            <button type="submit" class="btn-send-filter">Применить</button>
                                         </form>
                                     </div>
                                     <div class="sidebar-banner-list">
@@ -902,7 +906,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <div class="installation__title">
+                            <div class="installation__title titleh2">
                                 <h2 class="title">
                                     <span>ПОПУЛЯРНЫЕ ВОПРОСЫ,</span>
                                      КОТОРЫЕ ЗАДАЮТ НАШЕМУ ИНЖЕНЕРУ
@@ -1071,7 +1075,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <div class="contact-gl__title">
+                            <div class="contact-gl__title titleh2">
                                 <h2 class="title">
                                     <span>ПРИЕЗЖАЙТЕ</span> К НАМ В ОФИС
                                 </h2>
@@ -1087,7 +1091,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <div id="map" class="contact-gl_map">
+                            <div class="map-container">
+                                <div id="map" class="contact-gl_map">
+                                </div>
                                 <div class="contact-gl-info active">
                                     <div class="contact-gl-header">
                                         <button type="button" class="contact-gl-btn-close"><i class="fa-sharp fa-regular fa-xmark"></i></button>
