@@ -60,8 +60,6 @@ $(document).ready(function(){
           },
     });
 
-
-
     $('.sertificate_lsider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
