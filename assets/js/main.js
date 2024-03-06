@@ -3,8 +3,6 @@ $(document).ready(function(){
 
     $('.fotorama').fotorama({
         maxwidth: '100%',
-        //ratio: 16/9,
-        //allowfullscreen: true,
         nav: 'thumbs'
     });
     
