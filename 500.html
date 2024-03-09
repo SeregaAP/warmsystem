@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <link rel="stylesheet" href="./assets/libs/awesome/css/all.css">
+    <link rel="stylesheet" href="./assets/libs/fotorama-4.6.4/fotorama.css">
+    <link rel="stylesheet" href="./assets/libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/fotorama-4.6.4/fotorama.css">
+    <link rel="stylesheet" href="./assets/libs/swiper/swiper.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>500</title>
+    <style>
+        body{
+            width: 100%;
+            height: 110%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="dark">
+    <div class="wrap page-section-z">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header_top">
+                            <a href="/" class="header_logo-mobile"><img loading="lazy" src="./assets/images/logo-mobile.png" alt="логотип компаний"></a>
+                            <a href="/" class="header_logo"><img loading="lazy" src="./assets/images/logo.png" alt="логотип компаний"></a>
+                            <div class="header_input-group">
+                                <form>
+                                    <i class="fa-light fa-magnifying-glass"></i>
+                                    <input placeholder="Поиск в Warm systems" type="text" id="zv-search" name="zv-search" />
+                                </form>
+                            </div>
+                            <div class="header_el_group">
+                                <div class="header_el-inf">
+                                    <a href="tel:++77717011052"><img loading="lazy" src="./assets/images/icons/phone.png" alt="">+7(771) 701-10-52</a>
+                                    <span>Пн – ПТ 9:00 до 18:00</span>
+                                </div>
+                                <a href="#" class="header_card-link">
+                                    <span class="card-link_count">33</span>
+                                    <img loading="lazy" src="./assets/images/icons/basket.png" alt="">
+                                </a>
+                                <div class="header_lang">
+                                    <span>RU</span>
+                                    <div class="header_lang_list">
+                                        <a href="#">RU</a>
+                                        <a href="#">KZ</a>
+                                    </div>
+                                </div>
+                                <button title="открыть меню" type="button" class="burger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="header_bottom">
+                            <div class="header_menu">
+                                <ul>
+                                    <li>
+                                        <span class="link-group">
+                                            <a href="#">Каталог</a>
+                                        </span>
+                                        <ul>
+                                            <li>
+                                                <span class="link-group">
+                                                    <a href="#">items element 1 gegrerg regergrgreg ergergrgre</a>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="link-group">
+                                                    <a href="#">items element 2</a>
+                                                </span>
+                                                <ul>
+                                                    <li>
+                                                        <span class="link-group">
+                                                            <a href="#">items element link 1</a>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="link-group">
+                                                            <a href="#">items element link 2</a>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="link-group">
+                                                            <a href="#">items element link 3</a>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span class="link-group">
+                                                    <a href="#">items element 3</a>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="link-group">
+                                            <a href="#">Услуги</a>
+                                            <i class="fa-light fa-angle-down"></i>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="link-group">
+                                            <a href="#">О компании</a>
+                                            <i class="fa-light fa-angle-down"></i>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="link-group">
+                                            <a href="#">Объекты</a>
+                                            <i class="fa-light fa-angle-down"></i>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="link-group">
+                                            <a href="#">Документы и сертификаты</a>
+                                            <i class="fa-light fa-angle-down"></i>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="link-group">
+                                            <a href="#">Доставка и оплата</a>
+                                            <i class="fa-light fa-angle-down"></i>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="link-group">
+                                            <a href="#">Контакты</a>
+                                            <i class="fa-light fa-angle-down"></i>
+                                        </span>
+                                        <ul>
+                                            <li>
+                                                <span class="header-contact">
+                                                    <span class="h-title">Адрес:</span>
+                                                    <p>
+                                                        г. Алматы, ул.Торетай 30 "А", БЦ "BSD"
+                                                    </p>
+                                                    <span class="h-title">Телефон отдела продаж:</span>
+                                                    <a href="https://wa.me/"></a>
+                                                    <a href="tel:+77717011052">+7 (771) 701-10-52 (WhatsApp)</a>
+                                                    <a href="tel:+77717581840">+7 (771) 758-18-40</a>
+                                                    <a href="tel:+77717581855">+7 (771) 758-18-55</a>
+                                                    <a href="tel:+77717581835">+7 (771) 758-18-35</a>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header_social">
+                                <a title="наш youtube" target="_blank" href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <a title="наш youtube" target="_blank" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a title="наш youtube" target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="header_input-group">
+                                <form>
+                                    <i class="fa-light fa-magnifying-glass"></i>
+                                    <input placeholder="Поиск в Warm systems" type="text" id="zv-search" name="zv-search" />
+                                </form>
+                            </div>
+                            <div class="mobile-menu_cnt">
+                                <ul>
+                                    <li>
+                                        <span class="link-group">
+                                            <a href="#">Каталог</a>
+                                            <button class="btn-mob-link" type="button"><i class="fa-light fa-angle-right"></i></button>
+                                        </span>
+                                        <ul>
+                                            <li>
+                                                <span class="link-group">
+                                                    <a href="#">items element 1 gegrerg regergrgreg ergergrgre</a>
+                                                    <button class="btn-mob-link" type="button"><i class="fa-light fa-angle-right"></i></button>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="link-group">
+                                                    <a href="#">items element 2</a>
+                                                    <button class="btn-mob-link" type="button"><i class="fa-light fa-angle-right"></i></button>
+                                                </span>
+                                                <ul>
+                                                    <li>
+                                                        <span class="link-group">
+                                                            <a href="#">items element link 1</a>
+                                                            <button class="btn-mob-link" type="button"><i class="fa-light fa-angle-right"></i></button>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="link-group">
+                                                            <a href="#">items element link 2</a>
+                                                            <button class="btn-mob-link" type="button"><i class="fa-light fa-angle-right"></i></button>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="link-group">
+                                                            <a href="#">items element link 3</a>
+                                                            <button class="btn-mob-link" type="button"><i class="fa-light fa-angle-right"></i></button>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span class="link-group">
+                                                    <a href="#">items element 3</a>
+                                                    <button class="btn-mob-link" type="button"><i class="fa-light fa-angle-right"></i></button>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="link-group">
+                                            <a href="#">Услуги</a>
+                                            <button class="btn-mob-link" type="button"><i class="fa-light fa-angle-right"></i></button>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="link-group">
+                                            <a href="#">О компании</a>
+                                            <button class="btn-mob-link" type="button"><i class="fa-light fa-angle-right"></i></button>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="link-group">
+                                            <a href="#">Объекты</a>
+                                            <button class="btn-mob-link" type="button"><i class="fa-light fa-angle-right"></i></button>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="link-group">
+                                            <a href="#">Документы и сертификаты</a>
+                                            <button class="btn-mob-link" type="button"><i class="fa-light fa-angle-right"></i></button>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="link-group">
+                                            <a href="#">Доставка и оплата</a>
+                                            <button class="btn-mob-link" type="button"><i class="fa-light fa-angle-right"></i></button>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="link-group">
+                                            <a href="#">Контакты</a>
+                                            <button class="btn-mob-link" type="button"><i class="fa-light fa-angle-right"></i></button>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__soc">
+                                <a target="_blank" title="instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a target="_blank" title="youtube" href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <a target="_blank" title="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="warning">
+                <img loading="lazy" src="./assets/images/warning-bg.jpg" alt="">
+                <div class="warning__cnt">
+                    <img loading="lazy" src="./assets/images/roket-2.png" alt="">
+                    <div class="warning_txt">
+                        <h5 class="mb-2">Внутренняя ошибка сервера</h5>
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Услуги</a></li>
+                        </ul>
+                        <div class="warning_group">
+                            <button type="button" class="btn-dark open-manager">Оставить заявку</button>
+                            <a href="#" class="btn-light">Смотреть проекты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <div class="to-top">
+        <div class="to-top-relative">
+            <a title="на верх" data-goto=".page-section-z" class="menu-link to-top-link">
+                <img loading="lazy" src="./assets/images/icons/to-top.png" alt="иконка стрелка верх">
+            </a>
+            <div class="to-top-pulse"></div>
+        </div>
+    </div>
+
+    <div class="form_placing">
+        <div class="form_placing_cnt">
+            <div class="form_placing_header">
+                <h5>Оформление заказа</h5>
+                <button type="button" class="form_placing_close">
+                    <img loading="lazy" src="./assets/images/icons/close.png" alt="icon close">
+                </button>
+            </div>
+            <div class="form_placing_txt">
+                <form>
+                    <input name="name-zr" id="name-zr" type="text" placeholder="Ф.И.О.*" required>
+                    <input class="phone" name="phone-zr" id="phone-zr" type="text" placeholder="Номер телефона*" required>
+                    <input name="email-zr" id="email-zr" type="text" placeholder="Электронная почта*" required>
+                    <textarea name="message-zr" id="message-zr" placeholder="Комментарий к заказу"></textarea>
+                    <div class="dealers_confiditial">
+                        <input type="checkbox" name="pers-data_zr" checked >
+                        <label>Я согласен на обработку персональных данных</label>
+                    </div>
+                    <div class="dealers_confiditial">
+                        <input type="checkbox" name="ofert-data_zv" checked >
+                        <label>Согласен с публичной офертой</label>
+                    </div>
+                    <div class="btn-form_group">
+                        <button class="btn-dark" type="submit"><span></span>Отправить менеджеру</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="form_manager">
+        <div class="form_manager_cnt">
+            <div class="form_manager_header">
+                <h5>Оставьте заявку</h5>
+                <button type="button" class="form_manager_close">
+                    <img loading="lazy" src="./assets/images/icons/close.png" alt="icon close">
+                </button>
+            </div>
+            <div class="form_manager_txt">
+                <form>
+                    <input name="name-zr" id="name-zr" type="text" placeholder="Ф.И.О.*" required>
+                    <input class="phone" name="phone-zr" id="phone-zr" type="text" placeholder="Номер телефона*" required>
+                    <input name="email-zr" id="email-zr" type="text" placeholder="Электронная почта*" required>
+                    <textarea name="message-zr" id="message-zr" placeholder="Комментарий к заказу"></textarea>
+                    <div class="dealers_confiditial">
+                        <input type="checkbox" name="pers-data_zr" checked >
+                        <label>Я согласен на обработку персональных данных</label>
+                    </div>
+                    <div class="dealers_confiditial">
+                        <input type="checkbox" name="ofert-data_zv" checked >
+                        <label>Согласен с публичной офертой</label>
+                    </div>
+                    <div class="btn-form_group">
+                        <button class="btn-dark" type="submit"><span></span>Отправить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/libs/jquery/jquery-3.6.4.min.js"></script>
+    <script src="./assets/libs/jquery/jquery.maskedinput.min.js"></script>
+    <script src="./assets/libs//slick/slick.js"></script>
+    <script src="./assets/libs/fotorama-4.6.4/fotorama.js"></script>
+    <script src="./assets/libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/swiper/swiper.min.js"></script>
+    <script src="./assets/js/component.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

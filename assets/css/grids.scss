@@ -3,6 +3,9 @@
 }
 
 $gutter: 15px;
+.mb-2{
+    margin-bottom: 20px;
+}
 .container{
     max-width: 1220px;
     margin: 0 auto;
@@ -77,6 +80,7 @@ $gutter: 15px;
         
     }
 }
+
 
 @media screen and (max-width: 992px){
     .container{
