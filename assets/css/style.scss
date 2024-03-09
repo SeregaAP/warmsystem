@@ -73,13 +73,6 @@ a{
 p{
     font-family: 'SFProDisplay';
 }
-
-.dark{
-    background: #F4F4F4;
-}
-.white{
-    background: #fff;
-}
 .pb{
     padding-bottom: 60px;
 }
@@ -2816,8 +2809,6 @@ p{
                         color: #303030;
                         max-width: 450px;
                     }
-                    &.active{
-                        display: block;
                     }
                 }
             }
@@ -3880,9 +3871,6 @@ p{
         h2{
             font-size: 1.5rem !important;
             line-height: 1.8rem !important;
-        }
-        p{
-            
         }
     }
     .header{
